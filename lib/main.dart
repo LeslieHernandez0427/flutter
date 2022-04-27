@@ -10,7 +10,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: BotonFlotante(),
-      theme: ThemeData(primarySwatch: Colors.cyan, accentColor: Colors.purple, textTheme: TextTheme(bodyText2: TextStyle(Colors.pink, fontSize: 50))),
+      theme: ThemeData(
+        primarySwatch: Colors.cyan,
+        accentColor: Colors.purple,
+        textTheme: TextTheme(
+          bodyText2: TextStyle(
+            colors.pink,
+            fontSize: 50
+          )
+        )
+      ),
     );
   }
 }
