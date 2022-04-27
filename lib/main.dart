@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         accentColor: Colors.purple,
         textTheme: TextTheme(
           bodyText2: TextStyle(
-            color: Colors.pink,
+            color: Colors.purple,
             fontSize: 50
           )
         )
