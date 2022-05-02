@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 
 class BotonFlotante extends StatefulWidget {
-  BotonFlotante createState()=>_BotonFlotante();
+  _BotonFlotante createState()=>_BotonFlotante();
   }
 
   class _BotonFlotante extends State<BotonFlotante>{
     String txt="";
-  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +23,7 @@ class BotonFlotante extends StatefulWidget {
             )
           ),
           floatingActionButton: Row(
-            mainAxisAlingnment: MainAxisAlingnment.spaceEvenly,children:,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               FloatingActionButton(
                 onPressed:()=> setState(()=> txt="Hola Mundo"),
