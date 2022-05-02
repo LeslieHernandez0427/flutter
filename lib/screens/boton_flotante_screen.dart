@@ -18,11 +18,30 @@ class BotonFlotante extends StatefulWidget {
           body: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children:[
-                Text("Hola Mundo")
+              children: [
+                Text(txt)
               ]
             )
-          )
+          ),
+          floatingActionButton: Row(
+            mainAxisAlingnment: MainAxisAlingnment.spaceEvenly,children:,
+            children: [
+              FloatingActionButton(
+                onPressed:()=> setState(()=> txt="Hola Mundo"),
+                child:Icon(
+                  Icons.visibility,
+                  size: 30
+                )
+              ),
+              FloatingActionButton(
+                  onPressed:()=> setState(()=> txt=""),
+                  child:Icon(
+                  Icons.visibility_off,
+                  size: 30
+                  )
+                 ),
+            ]
     );
   }
-}
+
+
