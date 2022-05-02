@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 
-class BotonFlotante extends StatelessWidget {
-  const BotonFlotante({Key? key}) : super(key: key);
+class BotonFlotante extends StatefulWidget {
+  BotonFlotante createState()=>_BotonFlotante();
+  }
+
+  class _BotonFlotante extends State<BotonFlotante>{
+    String txt="";
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
